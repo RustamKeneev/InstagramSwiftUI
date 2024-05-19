@@ -51,7 +51,11 @@
 		FF746D162BFA507F005D4251 /* InstagramSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */,
+				FF746D2C2BFA5234005D4251 /* App */,
+				FF746D2B2BFA5226005D4251 /* Core */,
+				FF746D2A2BFA5221005D4251 /* Extensions */,
+				FF746D292BFA521D005D4251 /* Model */,
+				FF746D282BFA5218005D4251 /* Services */,
 				FF746D192BFA507F005D4251 /* ContentView.swift */,
 				FF746D1B2BFA5081005D4251 /* Assets.xcassets */,
 				FF746D1D2BFA5081005D4251 /* Preview Content */,
@@ -65,6 +69,98 @@
 				FF746D1E2BFA5081005D4251 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF746D282BFA5218005D4251 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF746D292BFA521D005D4251 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF746D2A2BFA5221005D4251 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF746D2B2BFA5226005D4251 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF746D2D2BFA5884005D4251 /* Authentication */,
+				FF746D2E2BFA58AF005D4251 /* Feed */,
+				FF746D2F2BFA58BD005D4251 /* Profile */,
+				FF746D302BFA58D5005D4251 /* Root */,
+				FF746D312BFA58E2005D4251 /* Search */,
+				FF746D322BFA5934005D4251 /* TabBar */,
+				FF746D332BFA5940005D4251 /* UploadPost */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FF746D2C2BFA5234005D4251 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FF746D2D2BFA5884005D4251 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FF746D2E2BFA58AF005D4251 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FF746D2F2BFA58BD005D4251 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FF746D302BFA58D5005D4251 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FF746D312BFA58E2005D4251 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FF746D322BFA5934005D4251 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FF746D332BFA5940005D4251 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
