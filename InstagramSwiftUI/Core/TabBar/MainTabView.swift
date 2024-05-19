@@ -29,7 +29,7 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "heart")
                 }//: TAB ITEM NOTIFICATION
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                 }//: TAB ITEM PROFILE
