@@ -74,13 +74,12 @@ struct ProfileView: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        print("clicked")
+                        print("ToolbarItem clicked")
                     } label: {
                         Image(systemName: "line.3.horizontal")
                             .foregroundColor(.black)
-                    }
-
-                }
+                    }//: LABEL
+                }//: TOOLBAR ITEM
             }//: TOOLBAR
         }//: NAVIGATION STACK
     }//: END BODY

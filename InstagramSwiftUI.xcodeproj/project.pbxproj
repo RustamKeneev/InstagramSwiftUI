@@ -26,6 +26,12 @@
 		FF746D512BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D502BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift */; };
 		FF746D532BFB7188005D4251 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D522BFB7188005D4251 /* SearchView.swift */; };
 		FF746D562BFB734F005D4251 /* SearchProfileImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D552BFB734F005D4251 /* SearchProfileImageModifier.swift */; };
+		FF746D582BFB8645005D4251 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D572BFB8645005D4251 /* LoginView.swift */; };
+		FF746D5A2BFB88CD005D4251 /* LoginViewTextfieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D592BFB88CD005D4251 /* LoginViewTextfieldModifier.swift */; };
+		FF746D5E2BFB8AE4005D4251 /* LoginViewBaseButtonTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D5D2BFB8AE4005D4251 /* LoginViewBaseButtonTitleModifier.swift */; };
+		FF746D602BFB8C3B005D4251 /* LoginButtonTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D5F2BFB8C3B005D4251 /* LoginButtonTitleModifier.swift */; };
+		FF746D622BFB8FE5005D4251 /* LoginViewDividerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */; };
+		FF746D642BFB9141005D4251 /* LoginViewTextOrModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +55,12 @@
 		FF746D502BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellCaptionHoursTitleModifier.swift; sourceTree = "<group>"; };
 		FF746D522BFB7188005D4251 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FF746D552BFB734F005D4251 /* SearchProfileImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProfileImageModifier.swift; sourceTree = "<group>"; };
+		FF746D572BFB8645005D4251 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FF746D592BFB88CD005D4251 /* LoginViewTextfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTextfieldModifier.swift; sourceTree = "<group>"; };
+		FF746D5D2BFB8AE4005D4251 /* LoginViewBaseButtonTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBaseButtonTitleModifier.swift; sourceTree = "<group>"; };
+		FF746D5F2BFB8C3B005D4251 /* LoginButtonTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonTitleModifier.swift; sourceTree = "<group>"; };
+		FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDividerModifier.swift; sourceTree = "<group>"; };
+		FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTextOrModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,7 @@
 		FF746D2D2BFA5884005D4251 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				FF746D572BFB8645005D4251 /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -213,9 +226,8 @@
 		FF746D3B2BFA69AD005D4251 /* ProfileVIewModifier */ = {
 			isa = PBXGroup;
 			children = (
-				FF746D392BFA69A9005D4251 /* PersonImageModifier.swift */,
-				FF746D3C2BFA6B28005D4251 /* EditProfileButtonModifier.swift */,
-				FF746D3E2BFA6BC9005D4251 /* PostsFollowsModifier.swift */,
+				FF746D5C2BFB8A7D005D4251 /* ProfileView */,
+				FF746D5B2BFB8A63005D4251 /* LoginView */,
 			);
 			path = ProfileVIewModifier;
 			sourceTree = "<group>";
@@ -246,6 +258,28 @@
 				FF746D552BFB734F005D4251 /* SearchProfileImageModifier.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		FF746D5B2BFB8A63005D4251 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				FF746D592BFB88CD005D4251 /* LoginViewTextfieldModifier.swift */,
+				FF746D5D2BFB8AE4005D4251 /* LoginViewBaseButtonTitleModifier.swift */,
+				FF746D5F2BFB8C3B005D4251 /* LoginButtonTitleModifier.swift */,
+				FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */,
+				FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		FF746D5C2BFB8A7D005D4251 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				FF746D392BFA69A9005D4251 /* PersonImageModifier.swift */,
+				FF746D3C2BFA6B28005D4251 /* EditProfileButtonModifier.swift */,
+				FF746D3E2BFA6BC9005D4251 /* PostsFollowsModifier.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +354,10 @@
 			files = (
 				FF746D372BFA5D4D005D4251 /* ProfileView.swift in Sources */,
 				FF746D462BFB3763005D4251 /* FeedCell.swift in Sources */,
+				FF746D5E2BFB8AE4005D4251 /* LoginViewBaseButtonTitleModifier.swift in Sources */,
 				FF746D442BFB3753005D4251 /* FeedView.swift in Sources */,
+				FF746D5A2BFB88CD005D4251 /* LoginViewTextfieldModifier.swift in Sources */,
+				FF746D622BFB8FE5005D4251 /* LoginViewDividerModifier.swift in Sources */,
 				FF746D3A2BFA69A9005D4251 /* PersonImageModifier.swift in Sources */,
 				FF746D1A2BFA507F005D4251 /* ContentView.swift in Sources */,
 				FF746D422BFA6DC6005D4251 /* UserStatView.swift in Sources */,
@@ -328,9 +365,12 @@
 				FF746D492BFB3B11005D4251 /* FeedCellProfileImageModifier.swift in Sources */,
 				FF746D182BFA507F005D4251 /* InstagramSwiftUIApp.swift in Sources */,
 				FF746D3F2BFA6BC9005D4251 /* PostsFollowsModifier.swift in Sources */,
+				FF746D602BFB8C3B005D4251 /* LoginButtonTitleModifier.swift in Sources */,
 				FF746D3D2BFA6B28005D4251 /* EditProfileButtonModifier.swift in Sources */,
 				FF746D352BFA5A6F005D4251 /* MainTabView.swift in Sources */,
+				FF746D582BFB8645005D4251 /* LoginView.swift in Sources */,
 				FF746D562BFB734F005D4251 /* SearchProfileImageModifier.swift in Sources */,
+				FF746D642BFB9141005D4251 /* LoginViewTextOrModifier.swift in Sources */,
 				FF746D532BFB7188005D4251 /* SearchView.swift in Sources */,
 				FF746D512BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift in Sources */,
 				FF746D4F2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift in Sources */,
