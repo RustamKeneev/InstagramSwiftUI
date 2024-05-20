@@ -24,6 +24,8 @@
 		FF746D4D2BFB4304005D4251 /* FeedCellBaseTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D4C2BFB4304005D4251 /* FeedCellBaseTitleModifier.swift */; };
 		FF746D4F2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D4E2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift */; };
 		FF746D512BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D502BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift */; };
+		FF746D532BFB7188005D4251 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D522BFB7188005D4251 /* SearchView.swift */; };
+		FF746D562BFB734F005D4251 /* SearchProfileImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D552BFB734F005D4251 /* SearchProfileImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		FF746D4C2BFB4304005D4251 /* FeedCellBaseTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellBaseTitleModifier.swift; sourceTree = "<group>"; };
 		FF746D4E2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellCaptionTitleModifier.swift; sourceTree = "<group>"; };
 		FF746D502BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellCaptionHoursTitleModifier.swift; sourceTree = "<group>"; };
+		FF746D522BFB7188005D4251 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FF746D552BFB734F005D4251 /* SearchProfileImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProfileImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 		FF746D312BFA58E2005D4251 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FF746D522BFB7188005D4251 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 		FF746D382BFA68E4005D4251 /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
+				FF746D542BFB7325005D4251 /* Search */,
 				FF746D472BFB3ADF005D4251 /* Feed */,
 				FF746D3B2BFA69AD005D4251 /* ProfileVIewModifier */,
 			);
@@ -232,6 +238,14 @@
 				FF746D502BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		FF746D542BFB7325005D4251 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FF746D552BFB734F005D4251 /* SearchProfileImageModifier.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +330,8 @@
 				FF746D3F2BFA6BC9005D4251 /* PostsFollowsModifier.swift in Sources */,
 				FF746D3D2BFA6B28005D4251 /* EditProfileButtonModifier.swift in Sources */,
 				FF746D352BFA5A6F005D4251 /* MainTabView.swift in Sources */,
+				FF746D562BFB734F005D4251 /* SearchProfileImageModifier.swift in Sources */,
+				FF746D532BFB7188005D4251 /* SearchView.swift in Sources */,
 				FF746D512BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift in Sources */,
 				FF746D4F2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift in Sources */,
 				FF746D4D2BFB4304005D4251 /* FeedCellBaseTitleModifier.swift in Sources */,
