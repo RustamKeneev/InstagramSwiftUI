@@ -13,7 +13,7 @@ struct MainTabView: View {
     //MARK: - BODY
     var body: some View {
         TabView{
-            Text("Home")
+            FeedView()
                 .tabItem {
                     Image(systemName: "house")
                 }//: TAB ITEM HOME
