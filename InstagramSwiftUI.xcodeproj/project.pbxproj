@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4094722BFBA0A4001F49DE /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094712BFBA0A4001F49DE /* AddEmailView.swift */; };
+		FF4094752BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094742BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift */; };
+		FF4094772BFBA283001F49DE /* AddEmailTextModifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094762BFBA283001F49DE /* AddEmailTextModifier .swift */; };
+		FF4094792BFBAC94001F49DE /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094782BFBAC94001F49DE /* CreateUserNameView.swift */; };
+		FF40947B2BFBC5E2001F49DE /* CreatePasswordVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40947A2BFBC5E2001F49DE /* CreatePasswordVIew.swift */; };
+		FF40947D2BFBC8EF001F49DE /* CompleteSignUpVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40947C2BFBC8EF001F49DE /* CompleteSignUpVIew.swift */; };
 		FF746D182BFA507F005D4251 /* InstagramSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */; };
 		FF746D1A2BFA507F005D4251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D192BFA507F005D4251 /* ContentView.swift */; };
 		FF746D1C2BFA5081005D4251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF746D1B2BFA5081005D4251 /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF4094712BFBA0A4001F49DE /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		FF4094742BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourEmailTitleModifier.swift; sourceTree = "<group>"; };
+		FF4094762BFBA283001F49DE /* AddEmailTextModifier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddEmailTextModifier .swift"; sourceTree = "<group>"; };
+		FF4094782BFBAC94001F49DE /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
+		FF40947A2BFBC5E2001F49DE /* CreatePasswordVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordVIew.swift; sourceTree = "<group>"; };
+		FF40947C2BFBC8EF001F49DE /* CompleteSignUpVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpVIew.swift; sourceTree = "<group>"; };
 		FF746D142BFA507F005D4251 /* InstagramSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUIApp.swift; sourceTree = "<group>"; };
 		FF746D192BFA507F005D4251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF4094732BFBA186001F49DE /* AddEmailView */ = {
+			isa = PBXGroup;
+			children = (
+				FF4094742BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift */,
+				FF4094762BFBA283001F49DE /* AddEmailTextModifier .swift */,
+			);
+			path = AddEmailView;
+			sourceTree = "<group>";
+		};
 		FF746D0B2BFA507F005D4251 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +183,10 @@
 			isa = PBXGroup;
 			children = (
 				FF746D572BFB8645005D4251 /* LoginView.swift */,
+				FF4094712BFBA0A4001F49DE /* AddEmailView.swift */,
+				FF4094782BFBAC94001F49DE /* CreateUserNameView.swift */,
+				FF40947A2BFBC5E2001F49DE /* CreatePasswordVIew.swift */,
+				FF40947C2BFBC8EF001F49DE /* CompleteSignUpVIew.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 		FF746D3B2BFA69AD005D4251 /* ProfileVIewModifier */ = {
 			isa = PBXGroup;
 			children = (
+				FF4094732BFBA186001F49DE /* AddEmailView */,
 				FF746D5C2BFB8A7D005D4251 /* ProfileView */,
 				FF746D5B2BFB8A63005D4251 /* LoginView */,
 			);
@@ -360,8 +386,13 @@
 				FF746D622BFB8FE5005D4251 /* LoginViewDividerModifier.swift in Sources */,
 				FF746D3A2BFA69A9005D4251 /* PersonImageModifier.swift in Sources */,
 				FF746D1A2BFA507F005D4251 /* ContentView.swift in Sources */,
+				FF4094752BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift in Sources */,
 				FF746D422BFA6DC6005D4251 /* UserStatView.swift in Sources */,
+				FF4094722BFBA0A4001F49DE /* AddEmailView.swift in Sources */,
+				FF4094792BFBAC94001F49DE /* CreateUserNameView.swift in Sources */,
 				FF746D4B2BFB3C62005D4251 /* FeedCellPostImageModifier.swift in Sources */,
+				FF40947B2BFBC5E2001F49DE /* CreatePasswordVIew.swift in Sources */,
+				FF40947D2BFBC8EF001F49DE /* CompleteSignUpVIew.swift in Sources */,
 				FF746D492BFB3B11005D4251 /* FeedCellProfileImageModifier.swift in Sources */,
 				FF746D182BFA507F005D4251 /* InstagramSwiftUIApp.swift in Sources */,
 				FF746D3F2BFA6BC9005D4251 /* PostsFollowsModifier.swift in Sources */,
@@ -375,6 +406,7 @@
 				FF746D512BFB45CC005D4251 /* FeedCellCaptionHoursTitleModifier.swift in Sources */,
 				FF746D4F2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift in Sources */,
 				FF746D4D2BFB4304005D4251 /* FeedCellBaseTitleModifier.swift in Sources */,
+				FF4094772BFBA283001F49DE /* AddEmailTextModifier .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
