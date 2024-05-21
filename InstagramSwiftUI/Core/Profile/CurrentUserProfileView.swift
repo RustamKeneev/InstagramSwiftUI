@@ -1,31 +1,30 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  InstagramSwiftUI
 //
-//  Created by Rustam Keneev on 19/5/24.
+//  Created by Rustam Keneev on 21/5/24.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
+struct CurrentUserProfileView: View {
     //MARK: - PROPERTIES
-    let user: User
-    
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
     ]
-        
+    
     //MARK: - BODY
     var body: some View {
+        NavigationStack{
             ScrollView{
                 VStack{
                     //HEADER
                     VStack(spacing: 8){
                         //PICTURE AND STATS
                         HStack{
-                            Image(user.profileImageUrl ?? "")
+                            Image("rustam_keneev")
                                 .resizable()
                                 .modifier(PersonImageModifier())
                             Spacer()
@@ -42,15 +41,11 @@ struct ProfileView: View {
                         
                         //: NAME AND BIO
                         VStack(alignment: .leading, spacing: 4){
-                            if let fullName = user.fullName {
-                                Text(fullName)
-                                    .font(.footnote)
-                                    .fontWeight(.semibold)
-                            }
-                            if let bio = user.bio {
-                                Text(bio)
-                                    .font(.footnote)
-                            }
+                            Text("Rustam Keneev")
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                            Text("IOS and Andoid developer")
+                                .font(.footnote)
                         }//: VSTACK (NAME AND BIO)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                         .padding(.horizontal)
@@ -77,10 +72,22 @@ struct ProfileView: View {
             }//: SCROLLVIEW
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        print("ToolbarItem clicked")
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.black)
+                    }//: LABEL
+                }//: TOOLBAR ITEM
+            }//: TOOLBAR
+        }//: NAVIGATION STACK
     }//: END BODY
-}//: END PROFILE VIEW
+}//: END CURRENT USER PROFILE VIEW
+
 
 //MARK: - PREVIEW
 #Preview {
-    ProfileView(user: User.MOCK_USERS[0])
+    CurrentUserProfileView()
 }
