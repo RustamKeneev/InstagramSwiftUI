@@ -9,66 +9,24 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
     //MARK: - PROPERTIES
+    
+    let user: User
+    var posts: [Post]{
+        return Post.MOCk_POSTS.filter({$0.user?.username == user.username})
+    }
+    
     private let gridItems: [GridItem] = [
-        .init(.flexible(), spacing: 1),
-        .init(.flexible(), spacing: 1),
-        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 2),
+        .init(.flexible(), spacing: 2),
+        .init(.flexible(), spacing: 2),
     ]
     
     //MARK: - BODY
     var body: some View {
         NavigationStack{
             ScrollView{
-                VStack{
-                    //HEADER
-                    VStack(spacing: 8){
-                        //PICTURE AND STATS
-                        HStack{
-                            Image("rustam_keneev")
-                                .resizable()
-                                .modifier(PersonImageModifier())
-                            Spacer()
-                            HStack(spacing: 8){
-                                Spacer()
-                                UserStatView(value: 100, title: "Posts")
-                                Spacer()
-                                UserStatView(value: 100, title: "Followers")
-                                Spacer()
-                                UserStatView(value: 100, title: "Following")
-                            }//: HSTACK
-                        }//: HSTACK (PICTURE AND STATS)
-                        .padding(.horizontal)
-                        
-                        //: NAME AND BIO
-                        VStack(alignment: .leading, spacing: 4){
-                            Text("Rustam Keneev")
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                            Text("IOS and Andoid developer")
-                                .font(.footnote)
-                        }//: VSTACK (NAME AND BIO)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                        .padding(.horizontal)
-                        
-                        // ACTION BUTTON
-                        Button(action: {
-                            
-                        }, label: {
-                            Text("Edit Profile")
-                                .modifier(EditProfileButtonModifier())
-                        })//: BUTTON EDIT PROFILE
-                        Divider()
-                    }//: VSTACK (HEADER)
-                    
-                    //POST GRID VIEW
-                    LazyVGrid(columns: gridItems){
-                        ForEach(0...10, id: \.self){ item in
-                            Image("rustam_keneev")
-                                .resizable()
-                                .scaledToFill()
-                        }
-                    }//: LAZY GRID
-                }//VSTACK
+                ProfileHeaderView(user: user)
+                PostGridView(user: user)
             }//: SCROLLVIEW
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
@@ -89,5 +47,5 @@ struct CurrentUserProfileView: View {
 
 //MARK: - PREVIEW
 #Preview {
-    CurrentUserProfileView()
+    CurrentUserProfileView(user: User.MOCK_USERS[0])
 }

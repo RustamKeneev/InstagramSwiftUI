@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddEmailTextModifier: ViewModifier {
+
     func body(content: Content) -> some View {
         content
             .font(.footnote)

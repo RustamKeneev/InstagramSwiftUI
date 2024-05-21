@@ -29,7 +29,7 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "heart")
                 }//: TAB ITEM NOTIFICATION
-            CurrentUserProfileView()
+            CurrentUserProfileView(user: User.MOCK_USERS[1])
                 .tabItem {
                     Image(systemName: "person")
                 }//: TAB ITEM PROFILE

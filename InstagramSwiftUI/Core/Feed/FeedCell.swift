@@ -9,22 +9,24 @@ import SwiftUI
 
 struct FeedCell: View {
     //MARK: - PROPERTIES
-
+    let post: Post
     var body: some View {
         VStack{
             // IMAGE AND USERNAME
             HStack{
-                Image("rustam_keneev")
-                    .resizable()
-                    .modifier(FeedCellProfileImageModifier())
-                Text("Rustam Keneev")
-                    .modifier(FeedCellBaseTitleModifier())
+                if let user = post.user {
+                    Image(user.profileImageUrl ?? "")
+                        .resizable()
+                        .modifier(FeedCellProfileImageModifier())
+                    Text(user.username)
+                        .modifier(FeedCellBaseTitleModifier())
+                }
                 Spacer()
             }//: HSTACK (IMAGE AND USERNAME)
             .padding(.leading, 8)
             
             //: POST IMAGE
-            Image("rustam_keneev")
+            Image(post.imageUrl)
                 .resizable()
                 .modifier(FeedCellPostImageModifier())
             
@@ -55,14 +57,14 @@ struct FeedCell: View {
             .foregroundColor(.black)
             
             // LIKES LABEL
-            Text("1000000000")
+            Text("\(post.likes) likes")
                 .modifier(FeedCellBaseTitleModifier())
             
             // CAPTION LABEL
             HStack{
-                Text("Best ")
+                Text("\(post.user?.username ?? "")")
                     .fontWeight(.semibold) +
-                Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+                Text(post.caption)
             }//: HSTACK (CAPTION LABEL)
             .modifier(FeedCellCaptionTitleModifier())
             
@@ -74,5 +76,5 @@ struct FeedCell: View {
 
 //MARK: - PREVIEW
 #Preview {
-    FeedCell()
+    FeedCell(post: Post.MOCk_POSTS[1])
 }
