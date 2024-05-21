@@ -19,6 +19,8 @@
 		FF4094852BFCF5CE001F49DE /* PostGridModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094842BFCF5CE001F49DE /* PostGridModifier.swift */; };
 		FF4094882BFD016D001F49DE /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094872BFD016D001F49DE /* PostGridView.swift */; };
 		FF40948A2BFD05BF001F49DE /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094892BFD05BF001F49DE /* ProfileHeaderView.swift */; };
+		FF40948C2BFD0977001F49DE /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40948B2BFD0977001F49DE /* UploadPostView.swift */; };
+		FF40948F2BFD16D6001F49DE /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40948E2BFD16D6001F49DE /* UploadPostViewModel.swift */; };
 		FF746D182BFA507F005D4251 /* InstagramSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */; };
 		FF746D1A2BFA507F005D4251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D192BFA507F005D4251 /* ContentView.swift */; };
 		FF746D1C2BFA5081005D4251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF746D1B2BFA5081005D4251 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		FF4094842BFCF5CE001F49DE /* PostGridModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridModifier.swift; sourceTree = "<group>"; };
 		FF4094872BFD016D001F49DE /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		FF4094892BFD05BF001F49DE /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		FF40948B2BFD0977001F49DE /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		FF40948E2BFD16D6001F49DE /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		FF746D142BFA507F005D4251 /* InstagramSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUIApp.swift; sourceTree = "<group>"; };
 		FF746D192BFA507F005D4251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,14 @@
 				FF4094842BFCF5CE001F49DE /* PostGridModifier.swift */,
 			);
 			path = PostsModifiers;
+			sourceTree = "<group>";
+		};
+		FF40948D2BFD16BD001F49DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF40948E2BFD16D6001F49DE /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FF746D0B2BFA507F005D4251 = {
@@ -259,6 +271,8 @@
 		FF746D332BFA5940005D4251 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				FF40948D2BFD16BD001F49DE /* ViewModel */,
+				FF40948B2BFD0977001F49DE /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -429,6 +443,7 @@
 				FF746D602BFB8C3B005D4251 /* LoginButtonTitleModifier.swift in Sources */,
 				FF746D3D2BFA6B28005D4251 /* EditProfileButtonModifier.swift in Sources */,
 				FF746D352BFA5A6F005D4251 /* MainTabView.swift in Sources */,
+				FF40948C2BFD0977001F49DE /* UploadPostView.swift in Sources */,
 				FF746D582BFB8645005D4251 /* LoginView.swift in Sources */,
 				FF746D562BFB734F005D4251 /* SearchProfileImageModifier.swift in Sources */,
 				FF746D642BFB9141005D4251 /* LoginViewTextOrModifier.swift in Sources */,
@@ -438,6 +453,7 @@
 				FF746D4F2BFB452C005D4251 /* FeedCellCaptionTitleModifier.swift in Sources */,
 				FF40948A2BFD05BF001F49DE /* ProfileHeaderView.swift in Sources */,
 				FF746D4D2BFB4304005D4251 /* FeedCellBaseTitleModifier.swift in Sources */,
+				FF40948F2BFD16D6001F49DE /* UploadPostViewModel.swift in Sources */,
 				FF4094772BFBA283001F49DE /* AddEmailTextModifier .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
