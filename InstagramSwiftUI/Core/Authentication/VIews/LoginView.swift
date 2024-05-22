@@ -11,6 +11,7 @@ struct LoginView: View {
     //MARK: - PROPERTIES
     @State private var email = ""
     @State private var password = ""
+//    @StateObject var registartionViewModel = RegistrationViewModel()
     
     //MARK: - BODY
     var body: some View {

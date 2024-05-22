@@ -9,8 +9,9 @@ import SwiftUI
 
 struct AddEmailView: View {
     //MARK: - PROPERTIES
-    @State private var email = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
+    
     //MARK: - BODY
     var body: some View {
         VStack(spacing: 12){
@@ -18,7 +19,7 @@ struct AddEmailView: View {
                 .modifier(AddYourEmailTitleModifier())
             Text("You'll use this email to sign in to your account")
                 .modifier(AddEmailTextModifier())
-            TextField("Email", text: $email)
+            TextField("Email", text: $viewModel.email)
                 .modifier(LoginViewTextfieldModifier())
             NavigationLink{
                 CreateUserNameView()

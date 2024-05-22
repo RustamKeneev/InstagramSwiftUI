@@ -10,18 +10,19 @@ import SwiftUI
 struct CompleteSignUpVIew: View {
     //MARK: - PROPERTIES
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
 
     //MARK: - BODY
     var body: some View {
         VStack(spacing: 12){
             Spacer()
-            Text("Welcome to Instagram, RustamKeneev")
+            Text("Welcome to Instagram, \(viewModel.username)")
                 .modifier(AddYourEmailTitleModifier())
                 .multilineTextAlignment(.center)
             Text("Click below to complate registration and start using Instagram")
                 .modifier(AddEmailTextModifier())
             Button {
-                print("complete clicked")
+                Task { try await viewModel.createUser()}
             } label: {
                 Text("Complete Sign Up")
                     .modifier(LoginButtonTitleModifier())

@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     //MARK: - PROPERTIES
     @StateObject var viewModel = ContentViewModel()
+    @StateObject var registrationViewModel = RegistrationViewModel()
 
     //MARK: - BODY
     var body: some View {
         Group{
             if viewModel.userSession == nil {
                 LoginView()
+                    .environmentObject(registrationViewModel)
             }else{
                 MainTabView()
             }//: IF AND ELSE

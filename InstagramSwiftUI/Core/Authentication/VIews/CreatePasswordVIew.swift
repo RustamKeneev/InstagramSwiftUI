@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CreatePasswordVIew: View {
     //MARK: - PROPERTIES
-    @State private var password = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
 
     //MARK: - BODY
     var body: some View {
@@ -19,7 +19,7 @@ struct CreatePasswordVIew: View {
                 .modifier(AddYourEmailTitleModifier())
             Text("Your password must be at least 6 characters in lenght")
                 .modifier(AddEmailTextModifier())
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $viewModel.password)
                 .modifier(LoginViewTextfieldModifier())
                 .padding(.top)
             NavigationLink{
