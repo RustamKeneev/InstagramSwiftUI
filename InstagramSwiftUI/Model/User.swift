@@ -20,8 +20,8 @@ extension User{
     static var MOCK_USERS: [User] = [
         .init(id: NSUUID().uuidString, username: "Rustam", profileImageUrl: "rustam_keneev",fullName: "RustamKeneev", bio: "Text", email: "rustamkeneev@gmail.com"),
         .init(id: NSUUID().uuidString, username: "f", profileImageUrl: "rustam_keneev",fullName: "sss", bio: "Text", email: "s@s.com"),
-        .init(id: NSUUID().uuidString, username: "Rustam", profileImageUrl: "rustam_keneev",fullName: "f", bio: "Text", email: "sd@s.com"),
-        .init(id: NSUUID().uuidString, username: "f", profileImageUrl: nil,fullName: "f", bio: "Text", email: "f@gmail.com"),
+        .init(id: NSUUID().uuidString, username: "Rustam", profileImageUrl: "person",fullName: "f", bio: "Text", email: "sd@s.com"),
+        .init(id: NSUUID().uuidString, username: "f", profileImageUrl: "person",fullName: "f", bio: "Text", email: "f@gmail.com"),
         .init(id: NSUUID().uuidString, username: "f", profileImageUrl: "rustam_keneev",fullName: "f", bio: "", email: "f@gmail.com")
     ]
 }
