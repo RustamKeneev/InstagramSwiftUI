@@ -13,10 +13,10 @@ struct EditProfileButtonModifier: ViewModifier {
             .font(.subheadline)
             .fontWeight(.semibold)
             .frame(width: 360, height: 32)
-            .foregroundColor(Color.black)
-            .overlay(
-                RoundedRectangle(cornerRadius: 6)
-                    .stroke(Color.gray, lineWidth: 2)
-            )
+//            .foregroundColor(Color.black)
+//            .overlay(
+//                RoundedRectangle(cornerRadius: 6)
+//                    .stroke(Color.gray, lineWidth: 2)
+//            )
     }
 }

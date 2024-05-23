@@ -51,8 +51,15 @@ struct ProfileHeaderView: View {
             Button(action: {
                 
             }, label: {
-                Text("Edit Profile")
+                Text(user.isCurrentUser ? "Edit Profile" : "Follow")
                     .modifier(EditProfileButtonModifier())
+                    .background(user.isCurrentUser ? .white : Color(.systemBlue))
+                    .foregroundColor(user.isCurrentUser ? .black : .white)
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(user.isCurrentUser ? .gray : .clear, lineWidth: 1)
+                    )
             })//: BUTTON EDIT PROFILE
             Divider()
         }//: VSTACK (HEADER)
