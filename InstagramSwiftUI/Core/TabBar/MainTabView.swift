@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     //MARK: - PROPERTIES
+    let user: User
     @State private var selectedIndex = 0
     
     //MARK: - BODY
@@ -50,7 +51,7 @@ struct MainTabView: View {
                 }//: TAB ITEM NOTIFICATION
                 .tag(3)
 
-            CurrentUserProfileView(user: User.MOCK_USERS[1])
+            CurrentUserProfileView(user: user)
                 .onAppear{
                     selectedIndex = 4
                 }//: ON APPEAR
@@ -66,5 +67,5 @@ struct MainTabView: View {
 
 //MARK: - PREVIEW
 #Preview {
-    MainTabView()
+    MainTabView(user: User.MOCK_USERS[0])
 }

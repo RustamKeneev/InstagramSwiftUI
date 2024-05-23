@@ -42,6 +42,7 @@ struct ProfileHeaderView: View {
                     Text(bio)
                         .font(.footnote)
                 }
+                Text(user.username)
             }//: VSTACK (NAME AND BIO)
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
             .padding(.horizontal)
