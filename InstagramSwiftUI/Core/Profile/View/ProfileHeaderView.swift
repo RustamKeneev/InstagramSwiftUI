@@ -70,7 +70,7 @@ struct ProfileHeaderView: View {
             Divider()
         }//: VSTACK (HEADER)
         .fullScreenCover(isPresented: $showEditProfile) {
-            Text("Edit profile view")
+            EditProfileView(user: user)
         }
     }//: END BODY
 }//: END PROFILE HEADER VIEW
