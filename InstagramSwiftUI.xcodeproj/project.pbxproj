@@ -60,6 +60,9 @@
 		FF4094E22C0071C2001F49DE /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094E12C0071C2001F49DE /* EditProfileRowView.swift */; };
 		FF4094E62C007750001F49DE /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094E52C007750001F49DE /* EditProfileViewModel.swift */; };
 		FF4094E82C00E864001F49DE /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094E72C00E864001F49DE /* ImageUploader.swift */; };
+		FF4094EB2C00F516001F49DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF4094EA2C00F516001F49DE /* Kingfisher */; };
+		FF4094ED2C00F80D001F49DE /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094EC2C00F80D001F49DE /* CircularProfileImageView.swift */; };
+		FF4094EF2C010F60001F49DE /* ProfileImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4094EE2C010F60001F49DE /* ProfileImageSize.swift */; };
 		FF746D182BFA507F005D4251 /* InstagramSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */; };
 		FF746D1A2BFA507F005D4251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D192BFA507F005D4251 /* ContentView.swift */; };
 		FF746D1C2BFA5081005D4251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF746D1B2BFA5081005D4251 /* Assets.xcassets */; };
@@ -113,6 +116,8 @@
 		FF4094E12C0071C2001F49DE /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		FF4094E52C007750001F49DE /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		FF4094E72C00E864001F49DE /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		FF4094EC2C00F80D001F49DE /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		FF4094EE2C010F60001F49DE /* ProfileImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageSize.swift; sourceTree = "<group>"; };
 		FF746D142BFA507F005D4251 /* InstagramSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF746D172BFA507F005D4251 /* InstagramSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUIApp.swift; sourceTree = "<group>"; };
 		FF746D192BFA507F005D4251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 				FF4094962BFD26F0001F49DE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				FF4094BC2BFD26F0001F49DE /* FirebaseMLModelDownloader in Frameworks */,
 				FF4094B02BFD26F0001F49DE /* FirebaseFirestoreSwift in Frameworks */,
+				FF4094EB2C00F516001F49DE /* Kingfisher in Frameworks */,
 				FF40949C2BFD26F0001F49DE /* FirebaseAppCheck in Frameworks */,
 				FF40949A2BFD26F0001F49DE /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				FF4094A02BFD26F0001F49DE /* FirebaseAuth in Frameworks */,
@@ -471,6 +477,8 @@
 			isa = PBXGroup;
 			children = (
 				FF746D412BFA6DC6005D4251 /* UserStatView.swift */,
+				FF4094EC2C00F80D001F49DE /* CircularProfileImageView.swift */,
+				FF4094EE2C010F60001F49DE /* ProfileImageSize.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -562,6 +570,7 @@
 				FF4094C52BFD26F0001F49DE /* FirebaseStorage */,
 				FF4094C72BFD26F0001F49DE /* FirebaseStorageCombine-Community */,
 				FF4094C92BFD26F0001F49DE /* FirebaseVertexAI-Preview */,
+				FF4094EA2C00F516001F49DE /* Kingfisher */,
 			);
 			productName = InstagramSwiftUI;
 			productReference = FF746D142BFA507F005D4251 /* InstagramSwiftUI.app */;
@@ -593,6 +602,7 @@
 			mainGroup = FF746D0B2BFA507F005D4251;
 			packageReferences = (
 				FF4094922BFD26F0001F49DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FF4094E92C00F516001F49DE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FF746D152BFA507F005D4251 /* Products */;
 			projectDirPath = "";
@@ -634,9 +644,11 @@
 				FF40947F2BFC64E0001F49DE /* User.swift in Sources */,
 				FF4094752BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift in Sources */,
 				FF746D422BFA6DC6005D4251 /* UserStatView.swift in Sources */,
+				FF4094ED2C00F80D001F49DE /* CircularProfileImageView.swift in Sources */,
 				FF4094832BFC791E001F49DE /* Post.swift in Sources */,
 				FF4094E22C0071C2001F49DE /* EditProfileRowView.swift in Sources */,
 				FF4094E02BFFADC6001F49DE /* EditProfileView.swift in Sources */,
+				FF4094EF2C010F60001F49DE /* ProfileImageSize.swift in Sources */,
 				FF4094DA2BFF629C001F49DE /* UserService.swift in Sources */,
 				FF4094E82C00E864001F49DE /* ImageUploader.swift in Sources */,
 				FF4094722BFBA0A4001F49DE /* AddEmailView.swift in Sources */,
@@ -883,6 +895,14 @@
 				minimumVersion = 10.26.0;
 			};
 		};
+		FF4094E92C00F516001F49DE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1025,6 +1045,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF4094922BFD26F0001F49DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseVertexAI-Preview";
+		};
+		FF4094EA2C00F516001F49DE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF4094E92C00F516001F49DE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -17,9 +17,7 @@ struct ProfileHeaderView: View {
         VStack(spacing: 8){
             //PICTURE AND STATS
             HStack{
-                Image(user.profileImageUrl ?? "")
-                    .resizable()
-                    .modifier(PersonImageModifier())
+                CircularProfileImageView(user: user, size: .large)
                 Spacer()
                 HStack(spacing: 8){
                     Spacer()
@@ -34,8 +32,8 @@ struct ProfileHeaderView: View {
             
             //: NAME AND BIO
             VStack(alignment: .leading, spacing: 4){
-                if let fullName = user.fullName {
-                    Text(fullName)
+                if let fullname = user.fullname {
+                    Text(fullname)
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
@@ -43,7 +41,7 @@ struct ProfileHeaderView: View {
                     Text(bio)
                         .font(.footnote)
                 }
-                Text(user.username)
+//                Text(user.username)
             }//: VSTACK (NAME AND BIO)
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
             .padding(.horizontal)

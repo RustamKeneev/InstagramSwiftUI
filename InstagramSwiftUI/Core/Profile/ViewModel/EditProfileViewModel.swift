@@ -23,6 +23,14 @@ class EditProfileViewModel: ObservableObject{
     
     init(user: User){
         self.user = user
+        
+        if let fullName = user.fullname {
+            self.fullname = fullName
+        }
+        
+        if let bio = user.bio{
+            self.bio = bio
+        }
     }
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
@@ -41,7 +49,7 @@ class EditProfileViewModel: ObservableObject{
             data["profileImageUrl"] = imageUrl
         }
         // UPDATE PROFILE NAME IF CHANGED
-        if !fullname.isEmpty && user.fullName != fullname {
+        if !fullname.isEmpty && user.fullname != fullname {
             data["fullname"] = fullname
             print("ololo: Update fullname \(fullname)")
         }

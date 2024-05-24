@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct PersonImageModifier: ViewModifier {
+    let size: ProfileImageSize
+
     func body(content: Content) -> some View {
         content
             .scaledToFill()
-            .frame(width: 80, height: 80)
+            .frame(width: size.dimension, height: size.dimension)
             .clipShape(Circle())
     }
 }
