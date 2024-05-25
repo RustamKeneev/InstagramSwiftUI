@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedCell: View {
     //MARK: - PROPERTIES
@@ -24,7 +25,7 @@ struct FeedCell: View {
             .padding(.leading, 8)
             
             //: POST IMAGE
-            Image(post.imageUrl)
+            KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .modifier(FeedCellPostImageModifier())
             

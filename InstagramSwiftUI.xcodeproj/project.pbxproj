@@ -88,6 +88,7 @@
 		FF746D602BFB8C3B005D4251 /* LoginButtonTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D5F2BFB8C3B005D4251 /* LoginButtonTitleModifier.swift */; };
 		FF746D622BFB8FE5005D4251 /* LoginViewDividerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */; };
 		FF746D642BFB9141005D4251 /* LoginViewTextOrModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */; };
+		FFCE5E9B2C02120E002B5520 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE5E9A2C02120E002B5520 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		FF746D5F2BFB8C3B005D4251 /* LoginButtonTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonTitleModifier.swift; sourceTree = "<group>"; };
 		FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDividerModifier.swift; sourceTree = "<group>"; };
 		FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTextOrModifier.swift; sourceTree = "<group>"; };
+		FFCE5E9A2C02120E002B5520 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,8 +411,8 @@
 		FF746D2E2BFA58AF005D4251 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				FF746D432BFB3753005D4251 /* FeedView.swift */,
-				FF746D452BFB3763005D4251 /* FeedCell.swift */,
+				FFCE5E992C0211EA002B5520 /* View */,
+				FFCE5E982C0211CE002B5520 /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -533,6 +535,23 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
+		FFCE5E982C0211CE002B5520 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFCE5E9A2C02120E002B5520 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFCE5E992C0211EA002B5520 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF746D432BFB3753005D4251 /* FeedView.swift */,
+				FF746D452BFB3763005D4251 /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -639,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCE5E9B2C02120E002B5520 /* FeedViewModel.swift in Sources */,
 				FF746D372BFA5D4D005D4251 /* ProfileView.swift in Sources */,
 				FF746D462BFB3763005D4251 /* FeedCell.swift in Sources */,
 				FF746D5E2BFB8AE4005D4251 /* LoginViewBaseButtonTitleModifier.swift in Sources */,
