@@ -10,12 +10,11 @@ import SwiftUI
 struct FeedCell: View {
     //MARK: - PROPERTIES
     let post: Post
-    
     var body: some View {
         VStack{
             // IMAGE AND USERNAME
             HStack{
-                if let users = post.user {
+                if let user = post.user {
                     CircularProfileImageView(user: user, size: .xSmall)
                     Text(user.username)
                         .modifier(FeedCellBaseTitleModifier())

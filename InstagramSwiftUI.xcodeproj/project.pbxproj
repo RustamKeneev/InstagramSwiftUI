@@ -300,6 +300,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FF4094F02C01B79E001F49DE /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				FF40948B2BFD0977001F49DE /* UploadPostView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
 		FF746D0B2BFA507F005D4251 = {
 			isa = PBXGroup;
 			children = (
@@ -446,8 +454,8 @@
 		FF746D332BFA5940005D4251 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				FF4094F02C01B79E001F49DE /* VIew */,
 				FF40948D2BFD16BD001F49DE /* ViewModel */,
-				FF40948B2BFD0977001F49DE /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";

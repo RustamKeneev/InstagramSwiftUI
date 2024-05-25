@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct Post: Identifiable, Hashable, Codable{
     let id: String
@@ -13,15 +14,15 @@ struct Post: Identifiable, Hashable, Codable{
     let caption: String
     var likes: Int
     let imageUrl: String
-    let timestamp: Data
+    let timestamp: Timestamp
     var user: User?
 }
 
 extension Post {
     static var MOCk_POSTS: [Post] = [
-        .init(id: NSUUID().uuidString, ownerUid: NSUUID().uuidString, caption: "this is test caption text", likes: 100, imageUrl: "person", timestamp: Data(), user: User.MOCK_USERS[0]),
-        .init(id: NSUUID().uuidString, ownerUid: NSUUID().uuidString, caption: "this is test caption text 2", likes: 100, imageUrl: "person", timestamp: Data(), user: User.MOCK_USERS[1]),
-        .init(id: NSUUID().uuidString, ownerUid: NSUUID().uuidString, caption: "this is test caption tex 3", likes: 100, imageUrl: "person", timestamp: Data(), user: User.MOCK_USERS[2]),
+        .init(id: NSUUID().uuidString, ownerUid: NSUUID().uuidString, caption: "this is test caption text", likes: 100, imageUrl: "person", timestamp: Timestamp(), user: User.MOCK_USERS[0]),
+        .init(id: NSUUID().uuidString, ownerUid: NSUUID().uuidString, caption: "this is test caption text 2", likes: 100, imageUrl: "person", timestamp: Timestamp(), user: User.MOCK_USERS[1]),
+        .init(id: NSUUID().uuidString, ownerUid: NSUUID().uuidString, caption: "this is test caption tex 3", likes: 100, imageUrl: "person", timestamp: Timestamp(), user: User.MOCK_USERS[2]),
         
     ]
 }
