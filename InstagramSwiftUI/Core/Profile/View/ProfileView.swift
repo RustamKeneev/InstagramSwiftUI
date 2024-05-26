@@ -10,10 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     //MARK: - PROPERTIES
     let user: User
-    var posts: [Post]{
-        return Post.MOCk_POSTS.filter({$0.user?.username == user.username})
-    }
-    
+ 
     //MARK: - BODY
     var body: some View {
         ScrollView{

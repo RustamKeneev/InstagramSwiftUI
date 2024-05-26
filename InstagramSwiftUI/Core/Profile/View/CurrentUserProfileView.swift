@@ -11,10 +11,7 @@ struct CurrentUserProfileView: View {
     //MARK: - PROPERTIES
     
     let user: User
-    var posts: [Post]{
-        return Post.MOCk_POSTS.filter({$0.user?.username == user.username})
-    }
-    
+
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 2),
         .init(.flexible(), spacing: 2),

@@ -89,6 +89,9 @@
 		FF746D622BFB8FE5005D4251 /* LoginViewDividerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */; };
 		FF746D642BFB9141005D4251 /* LoginViewTextOrModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */; };
 		FFCE5E9B2C02120E002B5520 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE5E9A2C02120E002B5520 /* FeedViewModel.swift */; };
+		FFCE5E9D2C022197002B5520 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE5E9C2C022197002B5520 /* PostService.swift */; };
+		FFCE5E9F2C023344002B5520 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE5E9E2C023344002B5520 /* PostGridViewModel.swift */; };
+		FFCE5EA12C034242002B5520 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE5EA02C034242002B5520 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +149,9 @@
 		FF746D612BFB8FE5005D4251 /* LoginViewDividerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDividerModifier.swift; sourceTree = "<group>"; };
 		FF746D632BFB9141005D4251 /* LoginViewTextOrModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTextOrModifier.swift; sourceTree = "<group>"; };
 		FFCE5E9A2C02120E002B5520 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		FFCE5E9C2C022197002B5520 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		FFCE5E9E2C023344002B5520 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		FFCE5EA02C034242002B5520 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				FF4094E52C007750001F49DE /* EditProfileViewModel.swift */,
+				FFCE5E9E2C023344002B5520 /* PostGridViewModel.swift */,
+				FFCE5EA02C034242002B5520 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 			children = (
 				FF4094D92BFF629C001F49DE /* UserService.swift */,
 				FF4094E72C00E864001F49DE /* ImageUploader.swift */,
+				FFCE5E9C2C022197002B5520 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -671,6 +680,7 @@
 				FF746D1A2BFA507F005D4251 /* ContentView.swift in Sources */,
 				FF40947F2BFC64E0001F49DE /* User.swift in Sources */,
 				FF4094752BFBA1CC001F49DE /* AddYourEmailTitleModifier.swift in Sources */,
+				FFCE5EA12C034242002B5520 /* ProfileViewModel.swift in Sources */,
 				FF746D422BFA6DC6005D4251 /* UserStatView.swift in Sources */,
 				FF4094ED2C00F80D001F49DE /* CircularProfileImageView.swift in Sources */,
 				FF4094832BFC791E001F49DE /* Post.swift in Sources */,
@@ -683,6 +693,7 @@
 				FF4094792BFBAC94001F49DE /* CreateUserNameView.swift in Sources */,
 				FF4094D22BFD938E001F49DE /* ContentViewModel.swift in Sources */,
 				FF746D4B2BFB3C62005D4251 /* FeedCellPostImageModifier.swift in Sources */,
+				FFCE5E9D2C022197002B5520 /* PostService.swift in Sources */,
 				FF40947B2BFBC5E2001F49DE /* CreatePasswordVIew.swift in Sources */,
 				FF4094882BFD016D001F49DE /* PostGridView.swift in Sources */,
 				FF40947D2BFBC8EF001F49DE /* CompleteSignUpVIew.swift in Sources */,
@@ -695,6 +706,7 @@
 				FF746D352BFA5A6F005D4251 /* MainTabView.swift in Sources */,
 				FF4094CE2BFD911F001F49DE /* AuthService.swift in Sources */,
 				FF40948C2BFD0977001F49DE /* UploadPostView.swift in Sources */,
+				FFCE5E9F2C023344002B5520 /* PostGridViewModel.swift in Sources */,
 				FF4094DE2BFF6395001F49DE /* SearchViewModel.swift in Sources */,
 				FF4094E62C007750001F49DE /* EditProfileViewModel.swift in Sources */,
 				FF746D582BFB8645005D4251 /* LoginView.swift in Sources */,

@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct PostGridView: View {
     //MARK: - PROPERTIES
-    let user: User
-    var posts: [Post]{
-        return Post.MOCk_POSTS.filter({$0.user?.username == user.username})
+    @StateObject var viewModel: PostGridViewModel
+    
+    init(user: User){
+        self._viewModel = StateObject(wrappedValue: PostGridViewModel(user: user))
     }
-        
+    
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 2),
         .init(.flexible(), spacing: 2),
@@ -24,8 +26,8 @@ struct PostGridView: View {
     var body: some View {
         //POST GRID VIEW
             LazyVGrid(columns: gridItems, spacing: 2){
-                ForEach(posts){ item in
-                    Image(item.imageUrl)
+                ForEach(viewModel.posts){ item in
+                    KFImage(URL(string: item.imageUrl))
                         .resizable()
                         .modifier(PostGridModifier())
                 }//: LOOP

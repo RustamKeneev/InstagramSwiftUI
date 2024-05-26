@@ -20,7 +20,7 @@ class AuthService{
         Task { try await loadUserData() }
     }
     
-    @MainActor
+//    @MainActor
     func login(withEmail email: String, password: String) async throws {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
@@ -31,7 +31,7 @@ class AuthService{
         }
     }
     
-    @MainActor
+//    @MainActor
     func createUser(email: String, password: String, userName: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
